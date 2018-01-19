@@ -10,11 +10,12 @@ For more information about using and configuring [laradock](https://laradock.io)
 
 1. (Optional) Fork this repository to your own GitHub account
 
-2. Clone this repository to your local environment
+2. Clone this repository to your local environment and change directories to be in the cloned repository's root
 
 ```bash
 # If you opted to fork the repo, replace "AC-TimRourke" with your GitHub username
 git clone git@github.com:AC-TimRourke/laravel-laradock-starter.git
+cd laravel-laradock-starter
 ```
 
 3. Fetch the git submodules - this will clone [laradock](https://laradock.io) so that you can run your new Laravel application in a Docker environment
