@@ -43,22 +43,22 @@ cp ./.env.example ./.env
 composer install
 ```
 
-7. Change directories to be inside the laradock submodule
+7. Set your application's secret key
+
+```bash
+php artisan key:generate
+```
+
+8. Change directories to be inside the laradock submodule
 
 ```bash
 cd laradock
 ```
 
-8. Spin up your environment, including each of the containers you need for your project (MySQL, Redis, and Nginx are available to you by default)
+9. Spin up your environment, including each of the containers you need for your project (MySQL, Redis, and Nginx are available to you by default)
 
 ```bash
 docker-compose up nginx mysql redis
-```
-
-9. Set your application's secret key
-
-```bash
-php artisan key:generate
 ```
 
 10. Visit [localhost](http://localhost) and enjoy!
