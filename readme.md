@@ -2,7 +2,9 @@
 
 # laravel-laradock-starter
 
-`laravel-laradock-starter` is a project that's designed to get you up and running very quickly with a Dockerized Laravel 5.4 application.
+`laravel-laradock-starter` is a project that's designed to get you up and running very quickly with a Dockerized Laravel 5.4 application. It includes [laradock](https://laradock.io) as a git submodule, and adds some basic configuration to get you started using MySQL, Redis, and Nginx.
+
+For more information about using and configuring [laradock](https://laradock.io), see their documentation.
 
 ## Installation
 
