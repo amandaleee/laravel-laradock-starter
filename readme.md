@@ -20,7 +20,8 @@ git clone git@github.com:AC-TimRourke/laravel-laradock-starter.git
 3. Fetch the git submodules - this will clone [laradock](https://laradock.io) so that you can run your new Laravel application in a Docker environment
 
 ```bash
-git submodule update --recursive --remote
+git submodule init
+git submodule update
 ```
 
 4. Copy the file `laradock-env-example` into the `./laradock` folder created by fetching the submodule, and rename it to `.env`
