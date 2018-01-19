@@ -43,19 +43,25 @@ cp ./.env.example ./.env
 composer install
 ```
 
-7. Spin up your environment, including each of the containers you need for your project (MySQL, Redis, and Nginx are available to you by default)
+7. Change directories to be inside the laradock submodule
+
+```bash
+cd laradock
+```
+
+8. Spin up your environment, including each of the containers you need for your project (MySQL, Redis, and Nginx are available to you by default)
 
 ```bash
 docker-compose up nginx mysql redis
 ```
 
-8. Visit localhost and enjoy!
-
-*NOTE:* If you plan to deploy your application somewhere, be sure to update the value `APP_KEY` in your `.env` to some new secret value:
+9. Set your application's secret key
 
 ```bash
 php artisan key:generate
 ```
+
+10. Visit [localhost](http://localhost) and enjoy!
 
 ## Learning Laravel
 
