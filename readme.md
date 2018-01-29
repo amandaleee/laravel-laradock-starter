@@ -43,7 +43,6 @@ cp ./.env.example ./.env
 cd laradock
 ```
 
-
 9. Spin up your docker environment (take note of the container name of the "workspace" container that it starts!)
 
 
@@ -51,7 +50,7 @@ cd laradock
 docker-compose up -d workspace nginx mysql redis
 ```
 
-9. Drop into your "workspace" container's terminal
+10. Drop into your "workspace" container's terminal
     * Note: your workspace container's name may not be "laradock_workspace_1". If it isn't use the container name 
             found in the previous step 
 
@@ -59,20 +58,20 @@ docker-compose up -d workspace nginx mysql redis
 docker exec -ti laradock_workspace_1 bash
 ```
 
-6. Run `composer install` to install the PHP dependencies for this project
+11. Run `composer install` to install the PHP dependencies for this project
 
 ```bash
 composer install
 ```
 
-7. Set your application's secret key
+12. Set your application's secret key
 
 ```bash
 php artisan key:generate
 ```
 
 
-10. Visit [localhost](http://localhost) and enjoy!
+13. Visit [localhost](http://localhost) and enjoy!
 
 ## Learning Laravel
 
